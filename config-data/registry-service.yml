@@ -1,12 +1,11 @@
-spring:
-  application:
-    name: springRESTclemen
-  cloud:
-    config:
-      uri: http://localhost:8081
-      username: root
-      password: s3cr3t
-  boot:
-    admin:
-      client:
-        url: http://localhost:8086
+server:
+ port: 8761
+
+eureka:
+ instance:
+   hostname: localhost
+ client:
+   registerWithEureka: false
+   fetchRegistry: false
+   serviceUrl:
+    defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
