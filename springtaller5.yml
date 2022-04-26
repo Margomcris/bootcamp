@@ -11,4 +11,9 @@ spring:
         web-allow-others: false
         trace: false
       path: /h2-console
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
     
