@@ -1,0 +1,14 @@
+server:
+  port: 8098
+
+
+spring:
+  application:
+    name: springtaller5
+  h2:
+    console:
+      settings:
+        web-allow-others: false
+        trace: false
+      path: /h2-console
+    
